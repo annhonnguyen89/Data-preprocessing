@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jul 24 15:27:41 2018
 
-@author: Thinkpad
-"""
-
-#from sklearn import ensemble
+from sklearn import ensemble
 from sklearn import preprocessing, model_selection, metrics
 import lightgbm as lgb
 import pandas as pd
@@ -17,7 +12,6 @@ train_file = ""
 test_file = ""
 
 
-# preprocessing
 def remove_constant_variables(df_train, df_test):
     '''
     creat DataFrame from file
